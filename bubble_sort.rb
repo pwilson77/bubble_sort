@@ -1,5 +1,3 @@
-arr = [1,9,7,12,3,2,25,12,9]
-
 
 def bubble_sort(arr)
     i = 0
@@ -20,9 +18,8 @@ def bubble_sort(arr)
      arr
 end
 
-def bubble_sort_by(arr) 
-    yield
-end
+arr = [4,3,78,2,0,2]
+
 puts bubble_sort(arr)
 
 
