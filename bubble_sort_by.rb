@@ -1,9 +1,8 @@
 def bubble_sort_by(arr)
-  n = arr.length 
-  for i in 0..n
-    limit = n - i - 1
+  for i in 0..arr.length
+    limit = arr.length - i - 1
     for j in 0..limit
-      arr[j+1] == nil ? break : "continue"
+      break if arr[j+1].nil?
       result = yield(arr[j],arr[j+1])
       if result > 0
         small = arr[j + 1]

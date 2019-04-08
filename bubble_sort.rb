@@ -1,10 +1,9 @@
 def bubble_sort(arr)
   i = 0
-  n = arr.length
-  while i < n 
-    limit = n-i-1
+  while i < arr.length
+    limit = arr.length - i - 1
     for j in 0..limit
-        arr[j+1] == nil ? break : "continue"
+        break if arr[j+1].nil?
         if (arr[j+1] < arr[j])
             small = arr[j + 1]
             large = arr[j]
