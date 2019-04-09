@@ -4,9 +4,7 @@ def bubble_sort_by(arr)
       break if arr[j + 1].nil?
 
       result = yield(arr[j], arr[j + 1])
-      if result > 0
-        arr[j], arr[j + 1] = arr[j + 1], arr[j]
-      end
+      arr[j], arr[j + 1] = arr[j + 1], arr[j] if result > 0
     end
   end
   arr
@@ -15,6 +13,5 @@ end
 arr = %w[hi hello hey]
 
 puts bubble_sort_by(arr) {
-  |first, second|
-  first.length - second.length
+  |first, second| first.length - second.length
 }

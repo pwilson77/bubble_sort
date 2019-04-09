@@ -1,11 +1,9 @@
 def bubble_sort(arr)
-  0.upto(arr.length) do 
+  0.upto(arr.length) do
     0.upto(arr.length - 2) do |j|
       break if arr[j + 1].nil?
 
-      if arr[j + 1] < arr[j]
-        arr[j], arr[j + 1] = arr[j + 1], arr[j]
-      end
+      arr[j], arr[j + 1] = arr[j + 1], arr[j] if arr[j + 1] < arr[j]
     end
   end
   arr
