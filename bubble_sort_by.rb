@@ -4,8 +4,8 @@ def bubble_sort_by(arr)
     for j in 0..limit
       break if arr[j + 1].nil? 
       result = yield(arr[j],arr[j+1])
-      next if result !> 0 
-      arr[j],arr[j+1] = arr[j+1],arr[j]
+      if result > 0 
+        arr[j],arr[j+1] = arr[j+1],arr[j]
       end
     end
   end
