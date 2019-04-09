@@ -12,6 +12,4 @@ end
 
 arr = %w[hi hello hey]
 
-puts bubble_sort_by(arr) {
-  |first, second| first.length - second.length
-}
+puts bubble_sort_by(arr) {|first, second| first.length - second.length}
