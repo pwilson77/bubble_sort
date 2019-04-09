@@ -13,8 +13,3 @@ end
 
 arr = [4, 3, 78, 2, 0, 2]
 puts bubble_sort(arr)
-
-
-
-
-
